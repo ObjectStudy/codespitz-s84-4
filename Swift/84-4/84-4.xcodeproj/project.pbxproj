@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD1B5E9E235F380B00178909 /* CommandTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B5E9D235F380B00178909 /* CommandTest.swift */; };
+		BD1B5EA0235F468D00178909 /* CommandTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1B5E9F235F468D00178909 /* CommandTask.swift */; };
 		BD3BA3FB235ECCC10089E134 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BA3FA235ECCC10089E134 /* Renderer.swift */; };
 		BD3BA3FD235ED4980089E134 /* Visitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BA3FC235ED4980089E134 /* Visitor.swift */; };
+		BD3BA401235EEA4B0089E134 /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BA400235EEA4B0089E134 /* Command.swift */; };
 		BD4D9713235EC7A800C74593 /* CompositeSortType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD4D9712235EC7A800C74593 /* CompositeSortType.swift */; };
 		BD6C03CC235E9E99007DC57D /* CompositeTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C03CB235E9E99007DC57D /* CompositeTask.swift */; };
 		BD6C03CE235E9F86007DC57D /* TaskReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6C03CD235E9F86007DC57D /* TaskReport.swift */; };
@@ -19,7 +22,7 @@
 		BD7C32EA235DC11B007AA635 /* _4_4.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD7C32E8235DC11B007AA635 /* _4_4.xcdatamodeld */; };
 		BD7C32EC235DC11C007AA635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD7C32EB235DC11C007AA635 /* Assets.xcassets */; };
 		BD7C32EF235DC11C007AA635 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD7C32ED235DC11C007AA635 /* LaunchScreen.storyboard */; };
-		BD7C32FA235DC11C007AA635 /* _4_4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C32F9235DC11C007AA635 /* _4_4Tests.swift */; };
+		BD7C32FA235DC11C007AA635 /* VisitorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C32F9235DC11C007AA635 /* VisitorTests.swift */; };
 		BD7C3314235DC12F007AA635 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C3313235DC12F007AA635 /* Task.swift */; };
 		BD7C3316235DC2E4007AA635 /* Tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C3315235DC2E4007AA635 /* Tasks.swift */; };
 		BD7C3318235DC60E007AA635 /* SortType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD7C3317235DC60E007AA635 /* SortType.swift */; };
@@ -36,8 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD1B5E9D235F380B00178909 /* CommandTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandTest.swift; sourceTree = "<group>"; };
+		BD1B5E9F235F468D00178909 /* CommandTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandTask.swift; sourceTree = "<group>"; };
 		BD3BA3FA235ECCC10089E134 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
 		BD3BA3FC235ED4980089E134 /* Visitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitor.swift; sourceTree = "<group>"; };
+		BD3BA400235EEA4B0089E134 /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		BD4D9712235EC7A800C74593 /* CompositeSortType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeSortType.swift; sourceTree = "<group>"; };
 		BD6C03CB235E9E99007DC57D /* CompositeTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeTask.swift; sourceTree = "<group>"; };
 		BD6C03CD235E9F86007DC57D /* TaskReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskReport.swift; sourceTree = "<group>"; };
@@ -51,7 +57,7 @@
 		BD7C32EE235DC11C007AA635 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD7C32F0235DC11C007AA635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD7C32F5235DC11C007AA635 /* 84-4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "84-4Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD7C32F9235DC11C007AA635 /* _4_4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _4_4Tests.swift; sourceTree = "<group>"; };
+		BD7C32F9235DC11C007AA635 /* VisitorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitorTests.swift; sourceTree = "<group>"; };
 		BD7C32FB235DC11C007AA635 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD7C3313235DC12F007AA635 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		BD7C3315235DC2E4007AA635 /* Tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tasks.swift; sourceTree = "<group>"; };
@@ -76,6 +82,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BD3BA3FF235EEA400089E134 /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				BD3BA400235EEA4B0089E134 /* Command.swift */,
+				BD1B5E9F235F468D00178909 /* CommandTask.swift */,
+			);
+			path = Command;
+			sourceTree = "<group>";
+		};
 		BD7C32D3235DC11B007AA635 = {
 			isa = PBXGroup;
 			children = (
@@ -97,7 +112,8 @@
 		BD7C32DE235DC11B007AA635 /* 84-4 */ = {
 			isa = PBXGroup;
 			children = (
-				BD7C3312235DC127007AA635 /* Example */,
+				BD3BA3FF235EEA400089E134 /* Command */,
+				BD7C3312235DC127007AA635 /* Visitor */,
 				BD7C32DF235DC11B007AA635 /* AppDelegate.swift */,
 				BD7C32E1235DC11B007AA635 /* SceneDelegate.swift */,
 				BD7C32E5235DC11B007AA635 /* Main.storyboard */,
@@ -112,13 +128,14 @@
 		BD7C32F8235DC11C007AA635 /* 84-4Tests */ = {
 			isa = PBXGroup;
 			children = (
-				BD7C32F9235DC11C007AA635 /* _4_4Tests.swift */,
+				BD7C32F9235DC11C007AA635 /* VisitorTests.swift */,
+				BD1B5E9D235F380B00178909 /* CommandTest.swift */,
 				BD7C32FB235DC11C007AA635 /* Info.plist */,
 			);
 			path = "84-4Tests";
 			sourceTree = "<group>";
 		};
-		BD7C3312235DC127007AA635 /* Example */ = {
+		BD7C3312235DC127007AA635 /* Visitor */ = {
 			isa = PBXGroup;
 			children = (
 				BD7C3313235DC12F007AA635 /* Task.swift */,
@@ -131,7 +148,7 @@
 				BD3BA3FA235ECCC10089E134 /* Renderer.swift */,
 				BD3BA3FC235ED4980089E134 /* Visitor.swift */,
 			);
-			path = Example;
+			path = Visitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,11 +256,13 @@
 				BD7C32E0235DC11B007AA635 /* AppDelegate.swift in Sources */,
 				BD7C3314235DC12F007AA635 /* Task.swift in Sources */,
 				BD6C03CE235E9F86007DC57D /* TaskReport.swift in Sources */,
+				BD3BA401235EEA4B0089E134 /* Command.swift in Sources */,
 				BD3BA3FD235ED4980089E134 /* Visitor.swift in Sources */,
 				BD3BA3FB235ECCC10089E134 /* Renderer.swift in Sources */,
 				BD7C3318235DC60E007AA635 /* SortType.swift in Sources */,
 				BD6C03CC235E9E99007DC57D /* CompositeTask.swift in Sources */,
 				BD7C32E2235DC11B007AA635 /* SceneDelegate.swift in Sources */,
+				BD1B5EA0235F468D00178909 /* CommandTask.swift in Sources */,
 				BD4D9713235EC7A800C74593 /* CompositeSortType.swift in Sources */,
 				BD7C3316235DC2E4007AA635 /* Tasks.swift in Sources */,
 				BD7C32EA235DC11B007AA635 /* _4_4.xcdatamodeld in Sources */,
@@ -254,7 +273,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BD7C32FA235DC11C007AA635 /* _4_4Tests.swift in Sources */,
+				BD7C32FA235DC11C007AA635 /* VisitorTests.swift in Sources */,
+				BD1B5E9E235F380B00178909 /* CommandTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

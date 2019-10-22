@@ -12,8 +12,8 @@ import Foundation
  Composite pattern 의 그룹 객체를 가진다.
  */
 class CompositeTask {
-    private let _title: String
-    private let _date: Date
+    private var _title: String
+    private var _date: Date
     private var isComplete: Bool
 //    private var _taskReport: TaskReport  = TaskReport()
     private var _list = [CompositeTask]()
@@ -28,8 +28,11 @@ class CompositeTask {
         isComplete = !isComplete
     }
     
-    func addTask(title: String, date: Date) {
-        _list.append(CompositeTask(title: title, date: date))
+    @discardableResult
+    func addTask(title: String, date: Date) -> CompositeTask{
+        let task = CompositeTask(title: title, date: date)
+        _list.append(task)
+        return task
     }
     
     func removeTask(task: CompositeTask) {
@@ -44,6 +47,13 @@ class CompositeTask {
             report.add(report: t.getReport(sortType: sortType))
         }
         return report
+    }
+    
+    func setTitle(title: String) {
+        self._title = title
+    }
+    func setDate(date: Date) {
+        self._date = date
     }
 }
 

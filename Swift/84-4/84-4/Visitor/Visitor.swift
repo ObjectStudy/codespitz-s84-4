@@ -56,6 +56,8 @@ class ConsoleVisitor: Visitor {
  */
 class JsonVisitor: Visitor {
 
+    private var result: String = ""
+    
     func getPadding(depth: Int) -> String {
         var padding = ""
         (0..<depth).forEach { _ in
@@ -64,17 +66,19 @@ class JsonVisitor: Visitor {
         return padding
     }
     func drawTask(task: CompositeTask, depth: Int) {
-        let padding = getPadding(depth: depth)
-        print("\(padding) {")
-        print("\(padding)  title: \"\(task.title)\",")
-        print("\(padding)  date: \"\(task.date)\",")
-        print("\(padding)  isComplete: \"\(task.isCompleted)\",")
-        print("\(padding)  sub: [ ")
+        result += "{"
+        result += "   title:  \"\(task.title)\","
+        result += "   date:  \"\(task.date)\","
+        result += "   isComplete:  \"\(task.isCompleted)\","
+        result += "   sub: [ "
     }
 
     func end(depth: Int) {
-        let padding = getPadding(depth: depth)
-        print("\(padding)  ]")
-        print("\(padding)  },")
+        result += "  ]"
+        result += "},"
+    }
+    
+    func getJson() -> String {
+        return result
     }
 }

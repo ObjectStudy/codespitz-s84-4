@@ -9,7 +9,7 @@
 import XCTest
 @testable import _4_4
 
-class _4_4Tests: XCTestCase {
+class VisitorTests: XCTestCase {
 
     func testConsoleVisitor() {
         let root = CompositeTask(title: "Root", date: Date())
