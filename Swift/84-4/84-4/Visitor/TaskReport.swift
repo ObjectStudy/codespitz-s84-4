@@ -16,14 +16,14 @@ import Foundation
 class TaskReport {
     private let _task: CompositeTask
 
-    private(set) var _list = [TaskReport]()
+    private(set) var list = [TaskReport]()
     
     public init(task: CompositeTask) {
         self._task = task
     }
     
     func add(report: TaskReport) {
-        _list.append(report)
+        list.append(report)
     }
     
     func getReport(sortType: SortType) -> TaskReport {
@@ -33,7 +33,7 @@ class TaskReport {
 
 extension TaskReport {
     var tasks: [TaskReport] {
-        return _list
+        return list
     }
     
     var task: CompositeTask {

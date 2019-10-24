@@ -73,18 +73,23 @@ class DateCommand: Command {
  그러므로 Add 가 있어면 Remove 도 존재해야 한다.
  */
 class AddCommand: Command {
-    private var task: CompositeTask
-
+    private let title: String
+    private let date: Date
+    private var oldTask: CompositeTask?
+    
     public init(title: String, date: Date) {
-        task = CompositeTask(title: title, date: date)
+        self.title = title
+        self.date = date
     }
 
     func execute(task: CompositeTask) {
-        task.addTask(title: task.title, date: task.date)
+        oldTask = task.addTask(title: title, date: date)
     }
 
     func undo(task: CompositeTask) {
-        task.removeTask(task: task)
+        if let oldTask = oldTask {
+            task.removeTask(task: oldTask)
+        }
     }
 }
 

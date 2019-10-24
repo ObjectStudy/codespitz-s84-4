@@ -39,12 +39,14 @@ class Renderer {
      depth 는 사용자가 이 함수를 최초 실행될 때 depth 를 0으로 준다는 보장이 없기 때문에 private 이다.
      */
     
-    private func render(visitor: Visitor, report: TaskReport, depth: Int) {
+    private func render(visitor: Visitor, report: TaskReport, depth: Int, isEnd: Bool) {
         // 제어를 실행하는 객체와 제어를 통제하는 객체를 분리하여야 한다.
         // 여기서는 제어를 실행하고 있다. for loop)
         visitor.drawTask(task: report.task, depth: depth)
-        for report in report._list {
-            render(visitor: visitor, report: report, depth: depth + 1)
+        var i = report.list.count
+        for report in report.list {
+            i += 1
+            render(visitor: visitor, report: report, depth: depth + 1, isEnd: i == 0)
         }
         visitor.end(depth: depth)
     }
@@ -53,8 +55,6 @@ class Renderer {
      */
     public func render(report: TaskReport) {
         let visitor = self.factory()
-        render(visitor: visitor, report: report, depth: 0)
+        render(visitor: visitor, report: report, depth: 0, isEnd: true)
     }
-    
-    
 }
